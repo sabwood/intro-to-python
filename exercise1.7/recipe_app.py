@@ -1,7 +1,6 @@
 from sqlalchemy import create_engine, Column
-from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.types import Integer, String
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import sessionmaker, declarative_base
 
 # Connects SQLAlchemy to task_database
 engine = create_engine("mysql://cf-python:password@localhost/task_database")
